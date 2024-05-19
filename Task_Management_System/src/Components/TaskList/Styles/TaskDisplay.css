@@ -1,0 +1,60 @@
+.task-display {
+    padding: 20px;
+  }
+  
+  .display-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .task-card {
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .task-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .priority-tag {
+    background-color: rgba(255, 85, 0, 0.459);
+    color: white;
+  }
+  
+  .due-date {
+    font-weight: bold;
+  }
+  
+  .tags {
+    display: flex;
+   
+    gap: 10px;
+  }
+  
+  .task-tag {
+    background-color: #108fe994;
+    color: white;
+    max-width: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .assignees {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .assignee {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .assignee strong {
+    font-weight: bold;
+  }
+  
