@@ -1,0 +1,43 @@
+.task-display {
+  padding-left: 30px;
+}
+
+.display-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.task-card-tasklist {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.task-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.assignees {
+  display: flex;
+  gap: 10px;
+}
+
+.assignee {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.assignee strong {
+  font-weight: bold;
+}
