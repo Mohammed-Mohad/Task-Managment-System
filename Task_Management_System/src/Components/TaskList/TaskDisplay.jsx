@@ -7,16 +7,16 @@ const TaskDisplay = ({ tasks }) => {
     <div className="task-display">
       <div className="display-section">
         {tasks.map(task => (
-          <div className="task-card" key={task.id}>
+          <div className="task-card-tasklist" key={task.id}>
             <div className="task-details">
               <div className="priority">
-                Priority: <Tag className="priority-tag">{task.priority}</Tag>
+                Priority: <Tag  color='red'>{task.priority}</Tag>
               </div>
-              <div className="due-date"><strong>Due Date:</strong> {task.dueDate}</div>
+              <div className="due-date">Due Date: <strong>{task.dueDate}</strong></div>
               <div className="tags">
-                Tags: {task.tags.map(tag => <Tag key={tag} className="task-tag">
-                  <div style={{display:'flex'}}>{tag}</div>
-                  </Tag>)}
+                Tags: {task.tags.map(tag => (
+                  <Tag key={tag} color="blue" style={{width:'80px'}}>{tag}</Tag>
+                ))}
               </div>
               <div className="assignees">
                 Assignees: {task.assignees.map(({ name, avatar }) => (

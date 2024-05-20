@@ -1,6 +1,11 @@
 import React from 'react';
 import { Card, Avatar, Tooltip, Row, Col } from 'antd';
 import { PlusOutlined, EllipsisOutlined, ArrowRightOutlined } from '@ant-design/icons';
+import Sticker from '../../assets/Stickers/sticker3.webp';
+import Sticker1 from '../../assets/Stickers/sticker2.webp';
+import Sticker2 from '../../assets/Stickers/sticker5.webp';
+import Sticker3 from '../../assets/Stickers/sticker1.webp';
+import Sticker4 from '../../assets/Stickers/sticker4.webp';
 
 
 const TaskCard = () => {
@@ -35,21 +40,21 @@ const TaskCard = () => {
           date: 'Today',
           title: 'Design the user interface',
           timeframe: '9 AM - 5 PM',
-          avatars: ['A', 'B'],
+          avatars: [Sticker, Sticker3],
           color: '#ffcccc',
         },
         {
           date: 'Tomorrow',
           title: 'Create task flow diagrams',
           timeframe: '10 AM - 4 PM',
-          avatars: ['C'],
+          avatars: [Sticker4],
           color: '#ccffff',
         },
         {
           date: 'Today',
           title: 'Prepare user stories for development',
           timeframe: '1 PM - 3 PM',
-          avatars: ['D', 'E'],
+          avatars: [Sticker2, Sticker1],
           color: '#ffcc99',
         },
       ],
@@ -58,21 +63,21 @@ const TaskCard = () => {
           date: 'Yesterday',
           title: 'Implement authentication system',
           timeframe: '10 AM - 4 PM',
-          avatars: ['D', 'E'],
+          avatars: [Sticker2, Sticker3],
           color: '#ccffcc',
         },
         {
           date: 'Today',
           title: 'Develop the API endpoints',
           timeframe: '12 PM - 8 PM',
-          avatars: ['F'],
+          avatars: [Sticker4],
           color: '#99ccff',
         },
         {
           date: 'Today',
           title: 'Integrate with third-party services',
           timeframe: '2 PM - 6 PM',
-          avatars: ['G', 'H'],
+          avatars: [Sticker],
           color: '#ffccff',
         },
       ],
@@ -81,21 +86,21 @@ const TaskCard = () => {
           date: 'Yesterday',
           title: 'Finalize project requirements',
           timeframe: '9 AM - 11 AM',
-          avatars: ['I'],
+          avatars: [Sticker2, Sticker3],
           color: '#d9d9d9',
         },
         {
           date: 'Yesterday',
           title: 'Setup project repository',
           timeframe: '1 PM - 2 PM',
-          avatars: ['J'],
+          avatars: [Sticker4],
           color: '#ccccff',
         },
         {
           date: 'Yesterday',
           title: 'Complete initial project setup',
           timeframe: '3 PM - 5 PM',
-          avatars: ['K'],
+          avatars: [Sticker3, Sticker1, Sticker2],
           color: '#b3ffb3',
         },
       ],
@@ -104,21 +109,21 @@ const TaskCard = () => {
           date: 'Last Week',
           title: 'Review team performance',
           timeframe: '10 AM - 11 AM',
-          avatars: ['L'],
+          avatars: [Sticker4, Sticker1, Sticker2],
           color: '#ff6666',
         },
         {
           date: 'Last Week',
           title: 'Audit the project documentation',
           timeframe: '2 PM - 4 PM',
-          avatars: ['M'],
+          avatars: [Sticker3, Sticker2, Sticker1, Sticker4],
           color: '#ff9966',
         },
         {
           date: 'Last Week',
           title: 'Plan the next sprint tasks',
           timeframe: '4 PM - 6 PM',
-          avatars: ['N', 'O'],
+          avatars: [Sticker4, Sticker3],
           color: '#ff9999',
         },
       ],
@@ -134,18 +139,18 @@ const TaskCard = () => {
           margin: '10px 0',
           backgroundColor: task.color,
         }}
-        bodyStyle={{ padding: 10 }}
+        /* bodyStyle={{ padding: 10 }} */
       >
         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 10 }}>
-          <span>{task.date}</span>
+          <span style={{fontFamily:'"Sora", san-serif', fontSize:'12px'}}>{task.date}</span>
           <ArrowRightOutlined style={{ backgroundColor: 'lightgrey', borderRadius: '50%', padding: 5 }} />
         </div>
-        <h4 style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{task.title}</h4>
+        <h4 style={{ fontFamily:'"Sora", san-serif', fontSize:'12px',whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{task.title}</h4>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 10 }}>
-          <span>{task.timeframe}</span>
+          <span style={{fontFamily:'"Sora", san-serif', fontSize:'12px'}}>{task.timeframe}</span>
           <div>
             {task.avatars.map((avatar, idx) => (
-              <Avatar key={idx} style={{ marginLeft: -10 }}>{avatar}</Avatar>
+              <Avatar key={idx} src={avatar} style={{ marginLeft: -10 }} />
             ))}
           </div>
         </div>
@@ -159,7 +164,7 @@ const TaskCard = () => {
         {columns.map((column) => (
           <Col key={column.key} span={6}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span>{column.title}</span>
+              <span style={{fontFamily:'"Sora", san-serif', fontSize:'12px'}}>{column.title}</span>
               <div style={{ display: 'flex', alignItems: 'center' }}>
                 <EllipsisOutlined style={{ fontSize: '12px', marginRight: '8px', cursor: 'pointer' }} />
                 <Tooltip title="Add Task">

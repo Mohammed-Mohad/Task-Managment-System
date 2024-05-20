@@ -2,17 +2,19 @@ import React, { useState } from 'react';
 import TaskDisplay from '../Components/TaskList/TaskDisplay';
 import TaskCard from '../Components/TaskList/TaskCard';
 import './Styles/TaskListPage.css';
+import Sticker from '../assets/Stickers/sticker4.webp';
+import Sticker1 from '../assets/Stickers/sticker5.webp';
 
 const TaskListPage = () => {
   const [tasks, setTasks] = useState([
     {
       id: 1,
-      priority: "Medium",
+      priority: "High",
       dueDate: "2024-05-15",
       tags: ['UI/UX', 'Frontend'],
       assignees: [
-        { name: 'John Doe', avatar: 'url_to_avatar' },
-        { name: 'Jane Smith', avatar: 'url_to_avatar' }
+        { name: 'Shimeles Ayalew', avatar: Sticker },
+        { name: 'Bekele Jemberu', avatar: Sticker1 }
       ]
     },
     // More task objects can be added here
