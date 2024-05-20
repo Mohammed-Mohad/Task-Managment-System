@@ -37,7 +37,7 @@ const ChatSection = () => {
     <div className="chat-section">
       <List
         className="comment-list"
-        header={`${messages.length} replies`}
+        header={<div style={{fontFamily:'"Sora", san-serif', fontSize:'14px', color:'blue'}}>{`${messages.length} replies`}</div>}
         itemLayout="horizontal"
         dataSource={messages}
         renderItem={item => (
