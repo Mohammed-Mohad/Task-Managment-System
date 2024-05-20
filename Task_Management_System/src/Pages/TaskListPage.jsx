@@ -11,7 +11,7 @@ const TaskListPage = () => {
       id: 1,
       priority: "High",
       dueDate: "2024-05-15",
-      tags: ['UI/UX', 'Frontend'],
+      tags: ['UI/UX', 'Front-End'],
       assignees: [
         { name: 'Shimeles Ayalew', avatar: Sticker },
         { name: 'Bekele Jemberu', avatar: Sticker1 }

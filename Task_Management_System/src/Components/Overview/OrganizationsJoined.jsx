@@ -23,12 +23,12 @@ const OrganizationsJoined = () => {
       </div>
       {/* Profile pictures of organizations joined */}
       <div className="organizations-profile-pictures">
-        <Avatar size={33} src={Google} className='organization-avatar' />
-        <Avatar size={33} src={Facebook} className='organization-avatar' />
-        <Avatar size={33} src={Microsoft} className='organization-avatar' />
-        <Avatar size={33} src={Amazon} className='organization-avatar' />
-        <Avatar size={33} src={EBS} className='organization-avatar' />
-        <Avatar size={33} src={GPT} className='organization-avatar' />
+        <Avatar size={25} src={Google} className='organization-avatar' />
+        <Avatar size={25} src={Facebook} className='organization-avatar' />
+        <Avatar size={25} src={Microsoft} className='organization-avatar' />
+        <Avatar size={25} src={Amazon} className='organization-avatar' />
+        <Avatar size={25} src={EBS} className='organization-avatar' />
+        <Avatar size={25} src={GPT} className='organization-avatar' />
         {/* Add more Avatars for additional organizations */}
       </div>
       {/* Task types */}

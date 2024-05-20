@@ -1,0 +1,10 @@
+.organization-page {
+    font-family: 'Sora', sans-serif;
+    font-size: 12px;
+    padding: 20px;
+  }
+  
+  .organization-page h1 {
+    font-size: 14px;
+    font-weight: bold;
+  }
